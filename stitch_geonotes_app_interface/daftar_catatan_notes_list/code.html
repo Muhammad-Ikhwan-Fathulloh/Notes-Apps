@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#1e1c0e", "surface-container-low": "#fbf3dd", "primary-container": "#1c1b1a", "error-container": "#ffdad6", "on-primary": "#ffffff", "error": "#ba1a1a", "primary": "#000000", "primary-fixed": "#e6e2df", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#221b00", "background": "#fff9eb", "surface-container-high": "#efe8d2", "tertiary-container": "#c1aa4d", "secondary": "#a13f25", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#544600", "on-primary-fixed-variant": "#484645", "surface-bright": "#fff9eb", "outline": "#7b766f", "surface-container": "#f5eed8", "secondary-fixed": "#ffdbd2", "inverse-surface": "#343122", "on-secondary": "#ffffff", "on-primary-fixed": "#1c1b1a", "surface-variant": "#e9e2cd", "on-surface-variant": "#4a4640", "inverse-primary": "#cac6c4", "on-primary-container": "#868382", "on-tertiary-container": "#4c3f00", "on-background": "#1e1c0e", "on-secondary-fixed-variant": "#812810", "tertiary-fixed-dim": "#dec665", "surface": "#fff9eb", "secondary-container": "#ff8667", "tertiary-fixed": "#fce27d", "surface-dim": "#e0dac4", "on-error": "#ffffff", "primary-fixed-dim": "#cac6c4", "surface-container-highest": "#e9e2cd", "inverse-on-surface": "#f8f1da", "secondary-fixed-dim": "#ffb4a1", "on-secondary-fixed": "#3c0800", "on-error-container": "#93000a", "tertiary": "#6f5d00", "on-secondary-container": "#741f07", "surface-tint": "#605e5c", "outline-variant": "#ccc5bd" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "1rem", "margin-md": "1.5rem", "gutter": "0.75rem", "gutter-md": "1rem", "space-xl": "2rem", "space-lg": "1.25rem", "space-md": "0.75rem" }, "fontFamily": { "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Space Grotesk"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Space Grotesk"] }, "fontSize": { "headline-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-background/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="NoteSnap Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBjaha0kBznHIFMEqR4YJISMsJYajquxbmcG6Foru6CLGhT3w54BBFokAXbDZ7UUTncAU7DZwHWFk0q5oC2KbiC4rXEwqk-9hX2uu-gGFwC9EX0XYqe2KvErrzjXABoj-Ev2WXF_Flu-HMkHYXi8JgIIjsaRbaJJPoAL_E5ylgchCbtl877FvXepFEp1edycK0MYdmFLGxCilBlhVHxiQlFi7zN_wTv0PTQhNxga2me"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">NoteSnap</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-medium ml-1 hidden sm:inline-block">Notes Vault</span></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span>tekno</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-background flex-grow"><div class="flex flex-col w-full px-margin pb-6 gap-space-md">
+<!-- Top Greeting & Header Block inspired by warm editorial style -->
+<div class="flex items-center justify-between pt-2">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Workspace Aktif</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight">
+        Hai, tekno <span class="inline-block select-none transform hover:rotate-12 transition-transform">👋</span>
+</h1>
+</div>
+<!-- Quick Mode / App Switcher Icon -->
+<button aria-label="Menu Opsi" class="w-11 h-11 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[22px]">apps</span>
+</button>
+</div>
+<!-- Search Bar with tactile neo-editorial pill design -->
+<div class="relative w-full">
+<div class="w-full bg-surface-container-low rounded-full px-space-md py-2.5 flex items-center gap-2.5 shadow-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">search</span>
+<input class="bg-transparent w-full outline-none font-body-md text-body-md text-on-surface placeholder:text-outline/70" id="searchNotesInput" placeholder="Cari catatan, tag, atau koordinat..." type="text"/>
+<button class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Filter Pills horizontal scroll -->
+<div class="flex items-center gap-2 overflow-x-auto py-1 -mx-margin px-margin scrollbar-none">
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shrink-0 shadow-sm">
+<span>Semua</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm">1</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark</span>
+<span>Penting</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+<span>Dengan Lokasi</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">draft</span>
+<span>Draft</span>
+</button>
+</div>
+<!-- Main Note Bento Area -->
+<div class="flex flex-col gap-space-md" id="notesVaultContainer">
+<!-- Note Card #1 (Prompt Specified Data: title 1, description 1, lat/long 1, 67%, 26 Nov 2026, #1) -->
+<div class="relative bg-secondary-container text-on-secondary-container rounded-lg p-space-md shadow-md flex flex-col justify-between overflow-hidden" id="note-card-1">
+<!-- Decorative Organic Stamp/Pattern Background (SVG) -->
+<div class="absolute -right-6 -bottom-6 w-32 h-32 opacity-15 pointer-events-none">
+<svg class="w-full h-full fill-current" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="45" stroke="currentColor" stroke-dasharray="8 6" stroke-width="10"></circle>
+<path d="M30 50 L45 65 L70 35" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="8"></path>
+</svg>
+</div>
+<!-- Card Top Bar: Meta Pill, Drag Affordance, Favorite & More -->
+<div class="flex items-center justify-between gap-2 mb-space-sm relative z-10">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-on-secondary-container/10 font-label-sm text-label-sm font-semibold tracking-wider">
+            NOTE #1
+          </span>
+<span class="text-on-secondary-container/70 font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+            26 Nov 2026
+          </span>
+</div>
+<div class="flex items-center gap-1">
+<!-- Favorite button -->
+<button aria-label="Tandai Favorit" class="w-8 h-8 rounded-full bg-on-secondary-container/10 flex items-center justify-center text-on-secondary-container hover:bg-on-secondary-container/20 transition-all active:scale-90" id="favoriteBtn">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+<!-- Menu dropdown trigger -->
+<div class="relative">
+<button aria-label="Menu Catatan" class="w-8 h-8 rounded-full bg-on-secondary-container/10 flex items-center justify-center text-on-secondary-container hover:bg-on-secondary-container/20 transition-all" id="noteMenuTrigger">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+<!-- Quick Action Popup -->
+<div class="hidden absolute right-0 top-10 w-44 bg-surface-container-lowest text-on-surface rounded-md shadow-xl py-1.5 z-30" id="noteMenuPopup">
+<button class="w-full px-3.5 py-2 text-left font-body-md text-body-md flex items-center gap-2 hover:bg-surface-container transition-colors" id="btnEditNote">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+<span>Edit Catatan</span>
+</button>
+<button class="w-full px-3.5 py-2 text-left font-body-md text-body-md flex items-center gap-2 hover:bg-surface-container transition-colors" id="btnShareNote">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+<span>Bagikan</span>
+</button>
+<button class="w-full px-3.5 py-2 text-left font-body-md text-body-md text-error flex items-center gap-2 hover:bg-error-container transition-colors" id="btnTriggerDelete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Hapus</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card Title & Content description -->
+<div class="relative z-10 my-1">
+<h2 class="font-headline-md text-headline-md font-bold tracking-tight text-on-secondary-container leading-tight" id="noteTitleDisplay">
+          title 1
+        </h2>
+<p class="font-body-lg text-body-lg text-on-secondary-container/90 mt-1 line-clamp-3" id="noteDescDisplay">
+          description 1
+        </p>
+</div>
+<!-- Checklist / Mini Task Visual Preview (Delight element) -->
+<div class="relative z-10 my-3 flex flex-col gap-1.5 bg-on-secondary-container/5 rounded-DEFAULT p-2.5">
+<div class="flex items-center gap-2 text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px] text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm line-through opacity-70">Review sprint lecture prototype</span>
+</div>
+<div class="flex items-center gap-2 text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px] opacity-70">radio_button_unchecked</span>
+<span class="font-body-sm text-body-sm">Finalize coordinate sync &amp; data map</span>
+</div>
+</div>
+<!-- Coordinates Badge + Status Meter -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-2 pt-2">
+<!-- Lat / Long Badge (Space Grotesk) -->
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-on-secondary-container/10 font-label-sm text-label-sm text-on-secondary-container">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-on-secondary-container animate-pulse"></span>
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+<span>📍 latitude 1, longitude 1</span>
+</div>
+<!-- Status Progress Pill -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-on-secondary-container text-secondary-container font-label-sm text-label-sm shadow-sm">
+<span class="font-semibold tracking-wide">Status: 67%</span>
+<div class="w-12 h-1.5 rounded-full bg-secondary-container/40 overflow-hidden">
+<div class="w-2/3 h-full bg-secondary-container rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Bento Inspiration Companion Card (Yellow Sunlight Pastel) -->
+<div class="grid grid-cols-2 gap-gutter">
+<!-- Media Snapshot Preview with detailed data-alt -->
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Lampiran Foto</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">photo_camera</span>
+</div>
+<div class="w-full h-24 rounded-DEFAULT overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up aesthetic flatlay of a designer notebook journal with hand-drawn mobile wireframes, ceramic warm coffee cup, fountain pen, and soft morning sunlight on creamy parchment background in studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM0_KVbmV10Mszzza1W0F_TL8WD9gJinoZ0uSf0PXciiFf4fV4zTmsX3aCcUKGUUClOQYMULOjWVayDakePQS8VasUFvJNPQaGZd351v4-DLZMFRIfvjQJMwAhUslnuyx_RKCUFk41R31MvwMlQDLxmZbpaioDQgjOScXfsTu5MvFWJzxs7z3y2T9MfRJADoO-5sojttbLGi0c7dt7Vd_FgDP2xvVTyrh7EFE4JG0"/>
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded-full bg-primary/70 text-on-primary font-label-sm text-label-sm">
+            +1 Snap
+          </div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium mt-2 truncate">Catatan Visual 01</span>
+</div>
+<!-- Quick Add Interactive Card -->
+<div class="bg-surface-container-high hover:bg-surface-container-highest cursor-pointer active:scale-95 transition-all rounded-lg p-space-sm flex flex-col justify-between items-center text-center justify-center gap-2 py-4" id="quickAddCard">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[28px]">add</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Tambah Baru</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tap untuk memo instan</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Workspace Stats & Productivity Summary Bar -->
+<div class="w-full bg-surface-container rounded-lg p-space-md flex items-center justify-between gap-2 mt-1">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">bar_chart</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight">1 Catatan Tersimpan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sinkronisasi GPS aktif • Terakhir 26 Nov</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+<!-- Interactive Modal: Edit Note Sheet (Hidden by default) -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 hidden flex items-end justify-center" id="editModalOverlay">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-t-xl p-margin flex flex-col gap-space-md shadow-2xl animate-in slide-in-from-bottom duration-200">
+<div class="w-12 h-1.5 bg-outline-variant rounded-full mx-auto mb-1"></div>
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">Ubah Catatan #1</h3>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" id="closeEditModal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-3">
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 block">Judul</label>
+<input class="w-full bg-surface-container rounded-DEFAULT px-3.5 py-2 font-headline-sm text-headline-sm text-on-surface outline-none" id="modalTitleInput" type="text" value="title 1"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 block">Deskripsi Isi</label>
+<textarea class="w-full bg-surface-container rounded-DEFAULT px-3.5 py-2 font-body-md text-body-md text-on-surface outline-none resize-none" id="modalDescInput" rows="3">description 1</textarea>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant mb-1 block">Koordinat Lokasi</label>
+<div class="flex items-center gap-2 bg-surface-container px-3.5 py-2 rounded-DEFAULT text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">my_location</span>
+<input class="w-full bg-transparent outline-none text-on-surface" id="modalCoordsInput" type="text" value="latitude 1, longitude 1"/>
+</div>
+</div>
+</div>
+<div class="flex gap-2 pt-2">
+<button class="flex-1 py-3 rounded-full bg-surface-container text-on-surface font-label-md text-label-md" id="btnCancelEdit">
+          Batal
+        </button>
+<button class="flex-1 py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-md active:scale-95 transition-transform" id="btnSaveEdit">
+          Simpan Perubahan
+        </button>
+</div>
+</div>
+</div>
+<!-- Delete Confirmation Toast / Sheet -->
+<div class="fixed bottom-24 left-margin right-margin z-50 hidden" id="deleteToast">
+<div class="bg-inverse-surface text-inverse-on-surface rounded-DEFAULT p-3.5 shadow-xl flex items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">warning</span>
+<span class="font-body-md text-body-md">Hapus Catatan #1?</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded-full text-inverse-on-surface/80 hover:text-inverse-on-surface font-label-md text-label-md" id="btnCancelDelete">
+          Batal
+        </button>
+<button class="px-3 py-1 rounded-full bg-error text-on-error font-label-md text-label-md active:scale-95 transition-transform" id="btnConfirmDelete">
+          Hapus
+        </button>
+</div>
+</div>
+</div>
+<!-- Empty State Delight Area (Revealed if card deleted) -->
+<div class="hidden flex-col items-center justify-center p-8 bg-surface-container rounded-lg text-center my-4" id="emptyStateBox">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[32px] text-outline">note_add</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Belum ada catatan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">
+      Semua catatan telah dihapus. Ketuk tombol tambah untuk mencatat ide atau lokasi pertamamu.
+    </p>
+<button class="mt-4 px-5 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md active:scale-95 transition-transform" id="btnResetEmpty">
+      Pulihkan Contoh #1
+    </button>
+</div>
+</div>
+<script>
+  (function() {
+    // Menu popup toggle
+    const menuTrigger = document.getElementById('noteMenuTrigger');
+    const menuPopup = document.getElementById('noteMenuPopup');
+    const favoriteBtn = document.getElementById('favoriteBtn');
+    const noteCard1 = document.getElementById('note-card-1');
+    const emptyStateBox = document.getElementById('emptyStateBox');
+    
+    // Modal Edit elements
+    const editModalOverlay = document.getElementById('editModalOverlay');
+    const btnEditNote = document.getElementById('btnEditNote');
+    const closeEditModal = document.getElementById('closeEditModal');
+    const btnCancelEdit = document.getElementById('btnCancelEdit');
+    const btnSaveEdit = document.getElementById('btnSaveEdit');
+    const modalTitleInput = document.getElementById('modalTitleInput');
+    const modalDescInput = document.getElementById('modalDescInput');
+    const noteTitleDisplay = document.getElementById('noteTitleDisplay');
+    const noteDescDisplay = document.getElementById('noteDescDisplay');
+    
+    // Delete Toast elements
+    const btnTriggerDelete = document.getElementById('btnTriggerDelete');
+    const deleteToast = document.getElementById('deleteToast');
+    const btnCancelDelete = document.getElementById('btnCancelDelete');
+    const btnConfirmDelete = document.getElementById('btnConfirmDelete');
+    const btnResetEmpty = document.getElementById('btnResetEmpty');
+    const quickAddCard = document.getElementById('quickAddCard');
+
+    // Toggle menu
+    menuTrigger?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      menuPopup.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menuPopup.contains(e.target) && e.target !== menuTrigger) {
+        menuPopup.classList.add('hidden');
+      }
+    });
+
+    // Favorite heart toggle
+    let isFav = false;
+    favoriteBtn?.addEventListener('click', () => {
+      isFav = !isFav;
+      const icon = favoriteBtn.querySelector('.material-symbols-outlined');
+      if (isFav) {
+        icon.style.fontVariationSettings = "'FILL' 1";
+        favoriteBtn.classList.add('scale-110');
+      } else {
+        icon.style.fontVariationSettings = "'FILL' 0";
+        favoriteBtn.classList.remove('scale-110');
+      }
+    });
+
+    // Edit modal open
+    btnEditNote?.addEventListener('click', () => {
+      menuPopup.classList.add('hidden');
+      modalTitleInput.value = noteTitleDisplay.innerText.trim();
+      modalDescInput.value = noteDescDisplay.innerText.trim();
+      editModalOverlay.classList.remove('hidden');
+    });
+
+    const hideEditModal = () => {
+      editModalOverlay.classList.add('hidden');
+    };
+
+    closeEditModal?.addEventListener('click', hideEditModal);
+    btnCancelEdit?.addEventListener('click', hideEditModal);
+
+    btnSaveEdit?.addEventListener('click', () => {
+      if (modalTitleInput.value.trim() !== '') {
+        noteTitleDisplay.innerText = modalTitleInput.value.trim();
+      }
+      if (modalDescInput.value.trim() !== '') {
+        noteDescDisplay.innerText = modalDescInput.value.trim();
+      }
+      hideEditModal();
+    });
+
+    // Delete flow
+    btnTriggerDelete?.addEventListener('click', () => {
+      menuPopup.classList.add('hidden');
+      deleteToast.classList.remove('hidden');
+    });
+
+    btnCancelDelete?.addEventListener('click', () => {
+      deleteToast.classList.add('hidden');
+    });
+
+    btnConfirmDelete?.addEventListener('click', () => {
+      deleteToast.classList.add('hidden');
+      noteCard1.classList.add('hidden');
+      emptyStateBox.classList.remove('hidden');
+      emptyStateBox.classList.add('flex');
+    });
+
+    btnResetEmpty?.addEventListener('click', () => {
+      noteCard1.classList.remove('hidden');
+      emptyStateBox.classList.add('hidden');
+      emptyStateBox.classList.remove('flex');
+    });
+
+    // Quick add trigger
+    quickAddCard?.addEventListener('click', () => {
+      modalTitleInput.value = "Catatan Baru";
+      modalDescInput.value = "Ketik detail catatan Anda di sini...";
+      editModalOverlay.classList.remove('hidden');
+    });
+
+    // Share mock action
+    document.getElementById('btnShareNote')?.addEventListener('click', () => {
+      menuPopup.classList.add('hidden');
+      if (navigator.share) {
+        navigator.share({
+          title: noteTitleDisplay.innerText,
+          text: noteDescDisplay.innerText,
+        }).catch(() => {});
+      } else {
+        alert('Tautan catatan disalin ke papan klip!');
+      }
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none" data-active-classes="bg-primary text-on-primary shadow-md"><div class="px-margin pb-3 pt-1 pointer-events-auto flex justify-center"><div class="bg-surface-container-lowest/90 backdrop-blur-xl px-2 py-1.5 rounded-full flex items-center gap-1.5 shadow-[0_6px_24px_rgba(26,25,24,0.08)]"><a aria-current="page" class="flex items-center gap-1.5 px-3.5 py-2 rounded-full font-label-md transition-colors bg-primary text-on-primary shadow-md" data-path="notes-vault" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="hidden xs:inline">Notes</span></a><a class="flex items-center gap-1.5 px-3.5 py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="spatial-map" href="#"><span class="material-symbols-outlined text-[20px]">explore</span><span class="hidden xs:inline">Map</span></a><a class="flex items-center justify-center w-11 h-11 rounded-full bg-primary text-on-primary mx-1 hover:opacity-90 active:scale-95 transition-all shadow-[0_4px_12px_rgba(0,0,0,0.2)]" data-path="quick-capture" href="#"><span class="material-symbols-outlined text-[22px]">add</span></a><a class="flex items-center gap-1.5 px-3.5 py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="media-board" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="hidden xs:inline">Media</span></a><a class="flex items-center gap-1.5 px-3.5 py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-path="account-settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="hidden xs:inline">Profile</span></a></div></div></nav></body></html>

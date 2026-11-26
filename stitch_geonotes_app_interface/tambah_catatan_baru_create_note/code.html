@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#1e1c0e", "surface-container-low": "#fbf3dd", "primary-container": "#1c1b1a", "error-container": "ffdad6", "on-primary": "#ffffff", "error": "#ba1a1a", "primary": "#000000", "primary-fixed": "#e6e2df", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#221b00", "background": "#fff9eb", "surface-container-high": "#efe8d2", "tertiary-container": "#c1aa4d", "secondary": "#a13f25", "surface-container-lowest": "#ffffff", "on-tertiary-fixed-variant": "#544600", "on-primary-fixed-variant": "#484645", "surface-bright": "#fff9eb", "outline": "#7b766f", "surface-container": "#f5eed8", "secondary-fixed": "#ffdbd2", "inverse-surface": "#343122", "on-secondary": "#ffffff", "on-primary-fixed": "#1c1b1a", "surface-variant": "#e9e2cd", "on-surface-variant": "#4a4640", "inverse-primary": "#cac6c4", "on-primary-container": "#868382", "on-tertiary-container": "#4c3f00", "on-background": "#1e1c0e", "on-secondary-fixed-variant": "#812810", "tertiary-fixed-dim": "#dec665", "surface": "#fff9eb", "secondary-container": "#ff8667", "tertiary-fixed": "#fce27d", "surface-dim": "#e0dac4", "on-error": "#ffffff", "primary-fixed-dim": "#cac6c4", "surface-container-highest": "#e9e2cd", "inverse-on-surface": "#f8f1da", "secondary-fixed-dim": "#ffb4a1", "on-secondary-fixed": "#3c0800", "on-error-container": "#93000a", "tertiary": "#6f5d00", "on-secondary-container": "#741f07", "surface-tint": "#605e5c", "outline-variant": "#ccc5bd" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "1rem", "margin-md": "1.5rem", "gutter": "0.75rem", "gutter-md": "1rem", "space-xl": "2rem", "space-lg": "1.25rem", "space-md": "0.75rem" }, "fontFamily": { "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Space Grotesk"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Space Grotesk"] }, "fontSize": { "headline-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-background/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><img alt="NoteSnap Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBjaha0kBznHIFMEqR4YJISMsJYajquxbmcG6Foru6CLGhT3w54BBFokAXbDZ7UUTncAU7DZwHWFk0q5oC2KbiC4rXEwqk-9hX2uu-gGFwC9EX0XYqe2KvErrzjXABoj-Ev2WXF_Flu-HMkHYXi8JgIIjsaRbaJJPoAL_E5ylgchCbtl877FvXepFEp1edycK0MYdmFLGxCilBlhVHxiQlFi7zN_wTv0PTQhNxga2me"/><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Quick Capture</h1></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span>tekno</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-background flex-grow"><div class="flex flex-col w-full pb-24">
+<!-- Top Action & Meta Navigation Bar -->
+<div class="px-margin pt-space-sm pb-space-md flex items-center justify-between">
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" onclick="history.back()" type="button">
+      Batal
+    </button>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>ID: 1 • tekno</span>
+</div>
+<button class="px-space-lg py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-transform" id="save-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Simpan Catatan</span>
+</button>
+</div>
+</div>
+<div class="px-margin flex flex-col gap-space-lg">
+<!-- Note Title Section (Neo-Editorial Warm Display) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Judul Dokumen</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+          Draft Aktif
+        </span>
+</div>
+<input class="w-full bg-transparent border-0 outline-none p-0 font-headline-xl-mobile text-headline-xl-mobile text-on-surface placeholder:text-on-surface-variant/30 leading-tight" id="note-title" name="title" placeholder="Design Sprint Lecture" type="text" value="Sprint Riset Desain #04"/>
+</div>
+<!-- Quick Bento Meta Tiers (Author / Category Pill Cluster) -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span>Kuliah Desain</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[15px] text-tertiary">history_edu</span>
+<span>Dibuat: Hari ini, 10:42</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface active:scale-90 transition-transform" id="favorite-toggle" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Note Description Editor Box -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Deskripsi &amp; Isi Gagasan</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">format_quote</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Markdown Aktif</span>
+</div>
+</div>
+<textarea class="w-full bg-transparent border-0 outline-none p-0 font-body-lg text-body-lg text-on-surface placeholder:text-on-surface-variant/40 resize-none leading-relaxed" id="note-description" name="description" placeholder="Tuliskan ide, rangkuman, atau poin penting di sini..." rows="5">Design sprint adalah metode kilat 5 hari untuk menjawab pertanyaan bisnis penting melalui desain, prototyping, dan pengujian ide langsung bersama pengguna akhir.</textarea>
+<!-- Mini stationery quote tag -->
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span id="char-counter">132 karakter</span>
+<span class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">cloud_done</span> Tersimpan lokal
+        </span>
+</div>
+</div>
+<!-- Status & Progress Slider (Value: 67) -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Status Penyelesaian</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tingkat kesiapan catatan sprint</p>
+</div>
+</div>
+<div class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1">
+<span id="status-display-badge">67%</span>
+<span class="text-tertiary-fixed">• Siap Uji</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<input class="w-full accent-primary cursor-pointer h-2 bg-surface-container-high rounded-full appearance-none" id="status-range" max="100" min="0" name="status" type="range" value="67"/>
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant px-1">
+<span>0 (Konsep Awal)</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tersinkron (67)</span>
+<span>100 (Final)</span>
+</div>
+</div>
+<!-- Quick status pills -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<button class="py-1.5 px-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-center font-label-sm text-label-sm transition-colors" onclick="setStatusValue(25, 'Draf Ide')" type="button">
+          25% Draf
+        </button>
+<button class="py-1.5 px-2 rounded-lg bg-primary text-on-primary text-center font-label-sm text-label-sm transition-colors" onclick="setStatusValue(67, 'Sedang Berjalan')" type="button">
+          67% Review
+        </button>
+<button class="py-1.5 px-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-center font-label-sm text-label-sm transition-colors" onclick="setStatusValue(100, 'Tuntas')" type="button">
+          100% Selesai
+        </button>
+</div>
+</div>
+<!-- Geolocation Bento Panel -->
+<div class="rounded-xl bg-surface-container-high p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">near_me</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Lokasi Geografis</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sematkan koordinat spasial catatan</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-lowest hover:bg-surface text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm active:scale-95 transition-transform" id="btn-get-loc" type="button">
+<span class="material-symbols-outlined text-[14px] text-secondary">my_location</span>
+<span>Ambil Lokasi Saat Ini</span>
+</button>
+</div>
+<!-- Live GPS Coordinate Inputs in Space Grotesk -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Latitude (Lat)
+          </span>
+<input class="font-label-md text-label-md text-on-surface bg-transparent outline-none border-0 p-0" id="input-latitude" name="latitude" placeholder="-6.2088" type="text" value="-6.2088"/>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Longitude (Long)
+          </span>
+<input class="font-label-md text-label-md text-on-surface bg-transparent outline-none border-0 p-0" id="input-longitude" name="longitude" placeholder="106.8456" type="text" value="106.8456"/>
+</div>
+</div>
+<!-- Static Map Visual Preview Container -->
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-variant shadow-inner mt-1">
+<div class="w-full h-full bg-cover bg-center" data-location="Jakarta, Indonesia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSUQGgDRVHlqjTAJaNiX_8j8aUmIo3S_Z36GG05gCa-Mxoe2h0JKY9fGhUH1vAiyOmgRN_Xfd0Dob1onKkc82W0CC0FInkFVZzAFBkX7Ng6ckDOFVrjRpXhtOaMkve8ckh3smIjFDOlSWe_5Q4A2FSwVU5bYzT5EGvR2LkXpxvMPe3j_KCtJDISKtqGYkk4uvxkntuAKkSPGc9O35xVS45b7DkaaYdKI5gzEavfVk')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">location_on</span>
+<span class="font-label-sm text-label-sm tracking-wide">Studio Kreatif Tekno, Jakarta Pusat</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary/70 backdrop-blur-sm text-on-primary">GPS Terkunci</span>
+</div>
+</div>
+</div>
+<!-- Media & Visual Attachment Preview Row -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Lampiran Visual &amp; Dokumen</span>
+<span class="font-label-sm text-label-sm text-tertiary">3 Lampiran</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Editorial close up photograph of creative design sprint sketches, yellow sticky notes with handwriting, fine tipped ink pens on warm textured recycled kraft paper desk setting, warm daylight studio lighting, neo-editorial stationery aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArZx6QmYYLOdQJAaxBBEKyQunc2BX5n0cAsvVUMuqdHHzRv8wQ_c7MDg6DUJleZjqQ_3TjalXpLadvwa9UZhsByLPtAP1q6qBexLnh8LstD0SX2eMP7e25hL_rSa8oplVzqPZ2UuXjVdM3D8n6VTFrCmRnwKV36T5pTaxoeUoDstGkrZx_lSd0y86l6u-9yXP4WSDoRc045hjMK9n5XPj1w-XXgr4-UG57z0voDYQ"/>
+<div class="absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-primary/70 text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px]">close</span>
+</div>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container shadow-sm group">
+<img class="w-full h-full object-cover" data-alt="Portrait photography of young creative woman designer pointing enthusiastically to ideas on board wearing warm mustard yellow sweater against clean beige cream backdrop, joyful bright expression, natural soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0bkPR8BvtpTDyTIu0w1nZ-VJH2BTmUW5r4VwW4n0A4mTXVRddR6m7mkdo2Hk-DiIvW2ytyczJlrJF3z6_jtrgLTGyW29tRmo2UsRg1owkexbNChlOer3qWJscAcUQ7Dp3MDmyQ3Hgpxg9jx3G7btmtSIyM5eznoihDbL2jG3PkmYbwW8C5JGNeciWiuTE1ShS5lGD5f5X9b7ZZR1OvOSLi1k7e9LsGAnXLhXxXSw"/>
+<div class="absolute top-1.5 right-1.5 w-6 h-6 rounded-full bg-primary/70 text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px]">close</span>
+</div>
+</div>
+<button class="aspect-square rounded-xl bg-surface-container-low hover:bg-surface-container flex flex-col items-center justify-center gap-1 text-on-surface-variant transition-colors" type="button">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">add_photo_alternate</span>
+</div>
+<span class="font-label-sm text-label-sm">Tambah</span>
+</button>
+</div>
+</div>
+<!-- Author Identity Confirmation Card -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dibuat oleh Pengguna</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">tekno <span class="font-label-sm text-label-sm text-on-surface-variant">(ID: 1)</span></span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Akun Terverifikasi</span>
+</div>
+</div>
+<!-- Bottom Floating Media Tool Dock (Matching image center screen layout) -->
+<div class="fixed bottom-4 left-0 right-0 z-40 px-margin flex justify-center pointer-events-none">
+<div class="pointer-events-auto bg-primary/95 text-on-primary backdrop-blur-lg px-3 py-2 rounded-full flex items-center gap-3 shadow-xl">
+<!-- Quick Add Plus Button -->
+<button aria-label="Aksi Utama" class="w-10 h-10 rounded-full bg-on-primary text-primary flex items-center justify-center active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[22px]">add</span>
+</button>
+<div class="h-6 w-px bg-on-primary/20"></div>
+<!-- Camera / Image Button -->
+<button aria-label="Ambil Foto" class="w-10 h-10 rounded-full hover:bg-on-primary/10 flex items-center justify-center text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</button>
+<!-- Audio Recording Button -->
+<button aria-label="Rekam Suara" class="w-10 h-10 rounded-full hover:bg-on-primary/10 flex items-center justify-center text-on-primary transition-colors relative" id="record-audio-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+<span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary-container"></span>
+</button>
+<!-- Checklist Button -->
+<button aria-label="Tambah Daftar Tugas" class="w-10 h-10 rounded-full hover:bg-on-primary/10 flex items-center justify-center text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">checklist</span>
+</button>
+<!-- Tag / Pen Marker Button -->
+<button aria-label="Goresan Pena" class="w-10 h-10 rounded-full hover:bg-on-primary/10 flex items-center justify-center text-on-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const rangeInput = document.getElementById('status-range');
+    const badge = document.getElementById('status-display-badge');
+    const desc = document.getElementById('note-description');
+    const counter = document.getElementById('char-counter');
+    const locBtn = document.getElementById('btn-get-loc');
+    const latInput = document.getElementById('input-latitude');
+    const longInput = document.getElementById('input-longitude');
+    const favBtn = document.getElementById('favorite-toggle');
+    const saveBtn = document.getElementById('save-btn');
+
+    if (rangeInput && badge) {
+      rangeInput.addEventListener('input', function(e) {
+        badge.textContent = e.target.value + '%';
+      });
+    }
+
+    window.setStatusValue = function(val, text) {
+      if (rangeInput && badge) {
+        rangeInput.value = val;
+        badge.textContent = val + '%';
+      }
+    };
+
+    if (desc && counter) {
+      desc.addEventListener('input', function(e) {
+        counter.textContent = e.target.value.length + ' karakter';
+      });
+    }
+
+    if (locBtn && latInput && longInput) {
+      locBtn.addEventListener('click', function() {
+        locBtn.innerHTML = '<span class="material-symbols-outlined text-[14px] animate-spin">refresh</span><span>Mencari GPS...</span>';
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            function(pos) {
+              latInput.value = pos.coords.latitude.toFixed(4);
+              longInput.value = pos.coords.longitude.toFixed(4);
+              locBtn.innerHTML = '<span class="material-symbols-outlined text-[14px] text-tertiary">check</span><span>Lokasi Terkunci</span>';
+            },
+            function() {
+              latInput.value = "-6.2088";
+              longInput.value = "106.8456";
+              locBtn.innerHTML = '<span class="material-symbols-outlined text-[14px] text-secondary">near_me</span><span>Pakai Koordinat Default</span>';
+            },
+            { timeout: 5000 }
+          );
+        } else {
+          latInput.value = "-6.2088";
+          longInput.value = "106.8456";
+          locBtn.innerHTML = '<span class="material-symbols-outlined text-[14px]">done</span><span>Selesai</span>';
+        }
+      });
+    }
+
+    if (favBtn) {
+      favBtn.addEventListener('click', function() {
+        const icon = favBtn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          const isFilled = icon.style.fontVariationSettings && icon.style.fontVariationSettings.includes("'FILL' 1");
+          icon.style.fontVariationSettings = isFilled ? "'FILL' 0" : "'FILL' 1";
+          icon.classList.toggle('text-secondary');
+        }
+      });
+    }
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', function() {
+        const original = saveBtn.innerHTML;
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">sync</span><span>Menyimpan...</span>';
+        setTimeout(function() {
+          saveBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">done_all</span><span>Tersimpan!</span>';
+          setTimeout(function() {
+            saveBtn.innerHTML = original;
+          }, 1800);
+        }, 600);
+      });
+    }
+  })();
+</script></main></body></html>
